@@ -1,3 +1,10 @@
 # Desarrollo-Web-Taller1
+## Dev equip
+* Benjamín Vega
+* Claudio Monsalve
+* Diego Ravanal
+* Angel Iriarte
 
-uste es tonto y yo inteligente
+## Patrones de diseño
+* Atomic design
+* Screaming Architecture
