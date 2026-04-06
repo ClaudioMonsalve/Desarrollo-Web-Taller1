@@ -1,5 +1,3 @@
-
-
 nav
 {
     margin:0%;
@@ -13,36 +11,11 @@ nav
     display: flex;
 }
 
-body
-{
-    margin: 0%;
-}
 
 .info_button
 {
     display:none;
 }
-
-.hamburger_button
-{
-    font-size: 500%;
-    width: 10%;
-    background-color: transparent;
-    color:whitesmoke;
-    border-color: slategray;
-}
-
-    
-
-.info_button
-{
-    background-color: transparent;
-    border-color: transparent;
-    color:whitesmoke;
-    font-size: 140%;
-    font-family:'Times New Roman', Times, serif
-}
-    
 
 @media (min-width : 1024px ) 
 {
@@ -58,11 +31,6 @@ body
         align-items: center;
         display: flex;
     }
-   
-    body
-    {
-        margin: 0%;
-    }
 
     .hamburger_button
     {
@@ -71,12 +39,7 @@ body
 
     .info_button
     {
-        display: block;
-        background-color: transparent;
-        border-color: transparent;
-        color:whitesmoke;
-        font-size: 140%;
-        font-family:'Times New Roman', Times, serif
+        display:block;
     }
-    
+
 }

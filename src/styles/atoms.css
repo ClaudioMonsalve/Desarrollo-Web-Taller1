@@ -1,0 +1,17 @@
+.hamburger_button
+{
+    font-size: 500%;
+    width: 10%;
+    background-color: transparent;
+    color:whitesmoke;
+    border-color: slategray;
+}
+
+.info_button
+{
+    background-color: transparent;
+    border-color: transparent;
+    color:whitesmoke;
+    font-size: 140%;
+    font-family:'Times New Roman', Times, serif
+}
