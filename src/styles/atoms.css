@@ -9,6 +9,17 @@
 
 .info_button
 {
+    display:none;
+    background-color: transparent;
+    border-color: transparent;
+    color:whitesmoke;
+    font-size: 140%;
+    font-family:'Times New Roman', Times, serif
+}
+
+.info2_button
+{
+    display:none;
     background-color: transparent;
     border-color: transparent;
     color:whitesmoke;

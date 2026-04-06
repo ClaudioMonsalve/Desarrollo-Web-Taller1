@@ -1,3 +1,7 @@
+body
+{
+    margin: 0%;
+}
 
 
 nav
@@ -13,70 +17,9 @@ nav
     display: flex;
 }
 
-body
-{
-    margin: 0%;
-}
-
-.info_button
-{
-    display:none;
-}
-
-.hamburger_button
-{
-    font-size: 500%;
-    width: 10%;
-    background-color: transparent;
-    color:whitesmoke;
-    border-color: slategray;
-}
-
+    
     
 
-.info_button
-{
-    background-color: transparent;
-    border-color: transparent;
-    color:whitesmoke;
-    font-size: 140%;
-    font-family:'Times New Roman', Times, serif
-}
-    
 
-@media (min-width : 1024px ) 
-{
-    nav
-    {
-        margin:0%;
-        padding-top: 4%;
-        padding-right: 4%;
-        padding-bottom:3%;
-        background-color:cornflowerblue;
-        min-height: 50px;
-        justify-content: flex-end;
-        align-items: center;
-        display: flex;
-    }
    
-    body
-    {
-        margin: 0%;
-    }
 
-    .hamburger_button
-    {
-        display: none;
-    }
-
-    .info_button
-    {
-        display: block;
-        background-color: transparent;
-        border-color: transparent;
-        color:whitesmoke;
-        font-size: 140%;
-        font-family:'Times New Roman', Times, serif
-    }
-    
-}

@@ -1,35 +1,19 @@
-nav
+.NavList
 {
-    margin:0%;
-    padding-top: 8%;
-    padding-right: 4%;
-    padding-bottom:8%;
-    background-color:cornflowerblue;
-    min-height: 50px;
-    justify-content: flex-end;
-    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     display: flex;
+    gap:6%;
 }
 
 
-.info_button
-{
-    display:none;
-}
 
 @media (min-width : 1024px ) 
 {
     nav
     {
-        margin:0%;
         padding-top: 4%;
-        padding-right: 4%;
         padding-bottom:3%;
-        background-color:cornflowerblue;
-        min-height: 50px;
-        justify-content: flex-end;
-        align-items: center;
-        display: flex;
     }
 
     .hamburger_button
@@ -40,6 +24,11 @@ nav
     .info_button
     {
         display:block;
+    }
+
+    .info2_button
+    {
+        display: block;
     }
 
 }
