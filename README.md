@@ -1,5 +1,5 @@
 # Desarrollo-Web-Taller1
-## Dev equip
+## Dev team
 * Benjamín Vega
 * Claudio Monsalve
 * Diego Ravanal
