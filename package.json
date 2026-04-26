@@ -1,0 +1,30 @@
+{
+  "name": "desarrollo-web-taller1",
+  "version": "1.0.0",
+  "description": "* Benjamín Vega * Claudio Monsalve * Diego Ravanal * Angel Iriarte",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaudioMonsalve/Desarrollo-Web-Taller1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ClaudioMonsalve/Desarrollo-Web-Taller1/issues"
+  },
+  "homepage": "https://github.com/ClaudioMonsalve/Desarrollo-Web-Taller1#readme",
+  "dependencies": {
+    "serve": "^14.2.6",
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^4.2.4"
+  }
+}
