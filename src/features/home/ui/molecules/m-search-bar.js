@@ -73,6 +73,10 @@ class MSearchBar extends HTMLElement {
           input.placeholder = this._selectedType.label;
         }
 
+        root.querySelectorAll('[data-type-id]').forEach(li => {
+          li.setAttribute('aria-selected', String(li.dataset.typeId === id));
+        });
+
         this.dispatchEvent(new CustomEvent('pyme-type-selected', {
           bubbles: true, composed: true,
           detail: { type: this._selectedType },

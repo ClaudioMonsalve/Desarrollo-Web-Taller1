@@ -14,7 +14,7 @@ class ADropdownButton extends HTMLElement {
 
   connectedCallback() {
     this.render();
-    this.shadowRoot.querySelector('button').addEventListener('click', (e) => {
+    this.addEventListener('click', (e) => {
       e.stopPropagation();
       this.dispatchEvent(new CustomEvent('dropdown-toggle', { bubbles: true, composed: true }));
     });

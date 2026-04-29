@@ -42,7 +42,9 @@ class ONavbar extends HTMLElement {
 
       <nav>
         <div class="nav-logo">
-          <a-icon name="abaco logo" size="34px" label="Ábaco logo"></a-icon>
+          <a href="/" class="nav-logo">
+            <a-icon name="abaco logo" size="34px" label="Ábaco logo"></a-icon>
+          </a>
         </div>
         <m-search-bar></m-search-bar>
         <a class="nav-user" href="#perfil">
