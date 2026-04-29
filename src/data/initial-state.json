@@ -33,7 +33,28 @@
       "title": "Descuento en Software",
       "description": "Hasta 40% de descuento en herramientas de gestión empresarial.",
       "category": "Tecnología",
-      "active": false
+      "active": true
+    },
+    {
+      "id": "ben-006",
+      "title": "Subsidio de Contratación",
+      "description": "Apoyo estatal para la contratación de nuevos talentos jóvenes.",
+      "category": "Recursos Humanos",
+      "active": true
+    },
+    {
+      "id": "ben-007",
+      "title": "Programa Exporta Fácil",
+      "description": "Asesoría y financiamiento para llevar tus productos al extranjero.",
+      "category": "Comercio Exterior",
+      "active": true
+    },
+    {
+      "id": "ben-008",
+      "title": "Fondo de Innovación Tecnológica",
+      "description": "Capital semilla para digitalizar los procesos operativos de tu PYME.",
+      "category": "Tecnología",
+      "active": true
     }
   ],
   "news": [
@@ -57,6 +78,27 @@
       "summary": "A partir de julio, todas las PYMEs deberán emitir boletas electrónicas.",
       "date": "2026-04-20",
       "category": "Regulación"
+    },
+    {
+      "id": "news-004",
+      "title": "Aumento del sueldo mínimo",
+      "summary": "Nuevos subsidios disponibles para apoyar a las PYMEs con el ajuste salarial.",
+      "date": "2026-04-18",
+      "category": "Laboral"
+    },
+    {
+      "id": "news-005",
+      "title": "Ciberseguridad para pequeños negocios",
+      "summary": "Lanzan campaña nacional para prevenir estafas digitales en el comercio.",
+      "date": "2026-04-15",
+      "category": "Tecnología"
+    },
+    {
+      "id": "news-006",
+      "title": "Nuevos fondos de Sercotec",
+      "summary": "Postula a los nuevos fondos concursables 'Crece' y 'Abeja' de este año.",
+      "date": "2026-04-10",
+      "category": "Financiamiento"
     }
   ],
   "pymeTypes": [

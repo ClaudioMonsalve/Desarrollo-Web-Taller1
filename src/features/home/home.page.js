@@ -30,8 +30,8 @@ document.addEventListener('pyme-type-selected', async (e) => {
   const news = await getAllNews();
   
   // Filtrado básico visual
-  const finalBenefits = typeId ? benefits.slice(0, 2) : benefits;
-  const finalNews = typeId ? news.slice(0, 2) : news;
+  const finalBenefits = typeId ? benefits.slice(0, 4) : benefits;
+  const finalNews = typeId ? news.slice(0, 4) : news;
 
   const panel = document.querySelector('o-panel-container');
   if (panel && panel.updateData) {
