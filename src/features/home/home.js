@@ -17,10 +17,10 @@ let pymeTypes = [];
 let allNews = [];
 let allBenefits = [];
 let slides = [
-  { title: 'Contenido relevante', subtitle: 'Descubre beneficios exclusivos para tu empresa', cta: 'Ver más', bgColor: '#F5F0E8', href: '#' },
-  { title: 'Capacitaciones', subtitle: 'Cursos gratuitos para impulsar tu PYME', cta: 'Inscríbete', bgColor: '#EDE5D8', href: 'capacitaciones.html' },
-  { title: 'Red de contactos', subtitle: 'Conecta con otras PYMEs de tu sector', cta: 'Explorar', bgColor: '#E0D5C3', href: 'red-contactos.html' },
-  { title: 'Evaluador de Bancos', subtitle: 'Compara opciones bancarias y encuentra la mejor para tu PYME', cta: 'Comparar', bgColor: '#D4C9B3', href: 'financiamiento.html' }
+  { title: 'Contenido relevante', subtitle: 'Descubre beneficios exclusivos para tu empresa', cta: 'Ver más', bgColor: '#d0c0a9', href: '#' },
+  { title: 'Capacitaciones', subtitle: 'Cursos gratuitos para impulsar tu PYME', cta: 'Inscríbete', bgColor: '#c6b598', href: 'capacitaciones.html' },
+  { title: 'Red de contactos', subtitle: 'Conecta con otras PYMEs de tu sector', cta: 'Explorar', bgColor: '#bba787', href: 'red-contactos.html' },
+  { title: 'Evaluador de Bancos', subtitle: 'Compara opciones bancarias y encuentra la mejor para tu PYME', cta: 'Comparar', bgColor: '#a79277', href: 'financiamiento.html' }
 ];
 
 let currentSlide = 0;
@@ -35,14 +35,15 @@ async function init() {
   renderDropdown();
   renderCarousel();
   
+  
   // Restaurar selección guardada
-  const savedTypeId = localStorage.getItem('selectedPymeType');
-  if (savedTypeId) {
-    const t = pymeTypes.find(x => x.id === savedTypeId);
-    if (t) {
-      searchInput.placeholder = t.label;
+    const savedTypeId = localStorage.getItem('selectedPymeType');
+    if (savedTypeId) {
+      const t = pymeTypes.find(x => x.id === savedTypeId);
+      if (t) {
+        searchInput.value = t.label;
+      }
     }
-  }
 
   updatePanels(savedTypeId);
   bindEvents();
@@ -60,9 +61,9 @@ function renderDropdown() {
 
   dropdownList.querySelectorAll('li').forEach(li => {
     li.addEventListener('click', (e) => {
-      const id = e.target.dataset.id;
+      const id = e.currentTarget.dataset.id;
       const t = pymeTypes.find(x => x.id === id);
-      searchInput.placeholder = t.label;
+      searchInput.value = t.label;
       localStorage.setItem('selectedPymeType', id);
       toggleDropdown(false);
       updatePanels(id);
