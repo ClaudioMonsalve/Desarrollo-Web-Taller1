@@ -1,0 +1,200 @@
+{
+  "benefits": [
+    {
+      "id": "ben-001",
+      "title": "Crédito PYME Preferencial",
+      "description": "Accede a líneas de crédito con tasas preferenciales para capital de trabajo.",
+      "category": "Financiamiento",
+      "active": true
+    },
+    {
+      "id": "ben-002",
+      "title": "Capacitación Digital Gratuita",
+      "description": "Cursos online para mejorar la presencia digital de tu empresa.",
+      "category": "Educación",
+      "active": true
+    },
+    {
+      "id": "ben-003",
+      "title": "Asesoría Legal PYME",
+      "description": "Consultas legales sin costo para formalización y contratos.",
+      "category": "Legal",
+      "active": true
+    },
+    {
+      "id": "ben-004",
+      "title": "Red de Networking",
+      "description": "Conecta con otras PYMEs de tu sector en eventos mensuales.",
+      "category": "Comunidad",
+      "active": true
+    },
+    {
+      "id": "ben-005",
+      "title": "Descuento en Software",
+      "description": "Hasta 40% de descuento en herramientas de gestión empresarial.",
+      "category": "Tecnología",
+      "active": false
+    }
+  ],
+  "news": [
+    {
+      "id": "news-001",
+      "title": "Nuevas líneas de financiamiento 2026",
+      "summary": "El gobierno anunció nuevas facilidades para PYMEs este trimestre.",
+      "date": "2026-04-28",
+      "category": "Economía"
+    },
+    {
+      "id": "news-002",
+      "title": "Feria PYME Santiago — Mayo 2026",
+      "summary": "Inscripciones abiertas para la feria de emprendedores más grande del país.",
+      "date": "2026-04-25",
+      "category": "Eventos"
+    },
+    {
+      "id": "news-003",
+      "title": "Digitalización obligatoria de facturas",
+      "summary": "A partir de julio, todas las PYMEs deberán emitir boletas electrónicas.",
+      "date": "2026-04-20",
+      "category": "Regulación"
+    }
+  ],
+  "pymeTypes": [
+    { "id": "comercio", "label": "Comercio" },
+    { "id": "servicios", "label": "Servicios" },
+    { "id": "gastronomia", "label": "Gastronomía" },
+    { "id": "manufactura", "label": "Manufactura" },
+    { "id": "tecnologia", "label": "Tecnología" }
+  ],
+  "courses": [
+    {
+      "id": "course-001",
+      "title": "Marketing Digital para PYMEs",
+      "description": "Aprende a posicionar tu empresa en redes sociales y buscadores."
+    },
+    {
+      "id": "course-002",
+      "title": "Finanzas Básicas",
+      "description": "Conceptos clave para gestionar la liquidez de tu negocio."
+    }
+  ],
+  "contacts": [
+    {
+      "id": "contact-001",
+      "name": "Logística Express S.A.",
+      "sector": "Servicios"
+    },
+    {
+      "id": "contact-002",
+      "name": "Proveedores del Sur",
+      "sector": "Manufactura"
+    }
+  ],
+  "banks": [
+    {
+      "id": "bank-001",
+      "name": "BancoEstado",
+      "description": "Orientado a micro y pequeñas empresas.",
+      "profiles": ["micro", "small", "medium"],
+      "needs": ["capital", "inversion"],
+      "tasaBadge": "Tasa 0.65%",
+      "tasaClass": "good",
+      "extraBadge": "Sin comisión",
+      "extraClass": "good",
+      "tasaVal": "0.65%–1.2%",
+      "tasaFill": "85%",
+      "tasaColor": "#3D6B50",
+      "plazoVal": "Hasta 60m",
+      "plazoFill": "70%",
+      "plazoColor": "#3D6B50",
+      "reqVal": "Accesibles",
+      "reqFill": "90%",
+      "reqColor": "#3D6B50",
+      "tags": ["Capital de trabajo", "FOGAPE", "Inversión"]
+    },
+    {
+      "id": "bank-002",
+      "name": "Banco de Chile",
+      "description": "Amplia oferta para empresas en crecimiento.",
+      "profiles": ["small", "medium"],
+      "needs": ["capital", "inversion", "comex"],
+      "tasaBadge": "Tasa 0.85%",
+      "tasaClass": "",
+      "extraBadge": "Banca online",
+      "extraClass": "good",
+      "tasaVal": "0.85%–1.5%",
+      "tasaFill": "70%",
+      "tasaColor": "#B8963E",
+      "plazoVal": "Hasta 72m",
+      "plazoFill": "80%",
+      "plazoColor": "#3D6B50",
+      "reqVal": "Moderados",
+      "reqFill": "60%",
+      "reqColor": "#B8963E",
+      "tags": ["Capital", "Comex", "Leasing"]
+    },
+    {
+      "id": "bank-003",
+      "name": "BCI",
+      "description": "Fuerte en leasing e inversión para medianas.",
+      "profiles": ["small", "medium"],
+      "needs": ["capital", "inversion", "leasing"],
+      "tasaBadge": "Tasa 0.80%",
+      "tasaClass": "",
+      "extraBadge": "Leasing competitivo",
+      "extraClass": "good",
+      "tasaVal": "0.80%–1.4%",
+      "tasaFill": "75%",
+      "tasaColor": "#B8963E",
+      "plazoVal": "Hasta 84m",
+      "plazoFill": "85%",
+      "plazoColor": "#3D6B50",
+      "reqVal": "Exigentes",
+      "reqFill": "50%",
+      "reqColor": "#B8963E",
+      "tags": ["Leasing", "Inversión", "Capital"]
+    },
+    {
+      "id": "bank-004",
+      "name": "Santander",
+      "description": "Buen balance entre accesibilidad y productos internacionales.",
+      "profiles": ["micro", "small", "medium"],
+      "needs": ["capital", "comex"],
+      "tasaBadge": "Tasa 0.90%",
+      "tasaClass": "",
+      "extraBadge": "Comisión 1%",
+      "extraClass": "warn",
+      "tasaVal": "0.90%–1.6%",
+      "tasaFill": "60%",
+      "tasaColor": "#B8963E",
+      "plazoVal": "Hasta 48m",
+      "plazoFill": "65%",
+      "plazoColor": "#B8963E",
+      "reqVal": "Accesibles",
+      "reqFill": "75%",
+      "reqColor": "#3D6B50",
+      "tags": ["Capital", "Comex"]
+    },
+    {
+      "id": "bank-005",
+      "name": "Scotiabank",
+      "description": "Enfocado en medianas con expansión internacional.",
+      "profiles": ["medium"],
+      "needs": ["inversion", "leasing", "comex"],
+      "tasaBadge": "Tasa 0.95%",
+      "tasaClass": "warn",
+      "extraBadge": "Presencia global",
+      "extraClass": "good",
+      "tasaVal": "0.95%–1.7%",
+      "tasaFill": "55%",
+      "tasaColor": "#c47a20",
+      "plazoVal": "Hasta 96m",
+      "plazoFill": "90%",
+      "plazoColor": "#3D6B50",
+      "reqVal": "Exigentes",
+      "reqFill": "40%",
+      "reqColor": "#c47a20",
+      "tags": ["Inversión", "Leasing", "Comex"]
+    }
+  ]
+}

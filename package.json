@@ -4,6 +4,9 @@
   "description": "* Benjamín Vega * Claudio Monsalve * Diego Ravanal * Angel Iriarte",
   "main": "tailwind.config.js",
   "scripts": {
+    "build:css": "npx @tailwindcss/cli -i src/styles/global.css -o dist/output.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i src/styles/global.css -o dist/output.css --watch",
+    "dev": "npm run build:css && npx serve . -l 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +22,7 @@
   },
   "homepage": "https://github.com/ClaudioMonsalve/Desarrollo-Web-Taller1#readme",
   "dependencies": {
+    "@tailwindcss/cli": "^4.2.4",
     "serve": "^14.2.6",
     "tailwind": "^4.0.0"
   },
