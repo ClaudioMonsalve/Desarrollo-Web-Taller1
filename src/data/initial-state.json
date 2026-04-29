@@ -108,6 +108,9 @@
     { "id": "manufactura", "label": "Manufactura" },
     { "id": "tecnologia", "label": "Tecnología" }
   ],
+  "usuarios": [
+
+  ],
   "courses": [
     {
       "id": "course-001",
