@@ -8,13 +8,7 @@
 
 ---
 
-## Arquitectura y Estructura del Proyecto
-
-El proyecto ha sido refactorizado para mantener un nivel de simplicidad adecuado para el aprendizaje, inspirándose en los ejercicios formativos base. Utilizamos **HTML5 nativo**, **Tailwind CSS** para los estilos, y **Vanilla JavaScript** para la manipulación del DOM.
-
-Se respeta el principio de **Screaming Architecture**: los archivos se agrupan por "dominio" o "feature" de negocio, lo que permite que al ver las carpetas, el proyecto "grite" de qué se trata la aplicación, evitando mezclar lógicas distintas.
-
-### Estructura de Directorios
+## Estructura del Proyecto
 
 ```text
 .
