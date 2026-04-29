@@ -55,11 +55,51 @@
       <p class="text-[#6B7D72]">Compara tasas, requisitos y beneficios de los principales bancos.</p>
     </section>
 
-    <o-bank-evaluator></o-bank-evaluator>
+    <!-- Perfil -->
+    <section class="mb-6">
+      <h3 class="text-lg font-bold mb-3">1. Tu perfil</h3>
+      <div class="grid grid-cols-2 gap-3" style="max-width:500px" id="profiles">
+        <div class="profile-card selected" data-p="micro">
+          <div style="font-size:1.5rem">🏪</div>
+          <div class="font-semibold text-sm">Micro</div>
+          <div class="text-xs text-[#6B7D72]">&lt; 2.400 UF/año</div>
+        </div>
+        <div class="profile-card" data-p="small">
+          <div style="font-size:1.5rem">🏢</div>
+          <div class="font-semibold text-sm">Pequeña</div>
+          <div class="text-xs text-[#6B7D72]">2.400–25.000 UF</div>
+        </div>
+        <div class="profile-card" data-p="medium">
+          <div style="font-size:1.5rem">🏭</div>
+          <div class="font-semibold text-sm">Mediana</div>
+          <div class="text-xs text-[#6B7D72]">25.000–100.000 UF</div>
+        </div>
+        <div class="profile-card" data-p="all">
+          <div style="font-size:1.5rem">📊</div>
+          <div class="font-semibold text-sm">Ver todos</div>
+          <div class="text-xs text-[#6B7D72]">Sin filtro</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Necesidad -->
+    <section class="mb-6">
+      <h3 class="text-lg font-bold mb-3">2. ¿Qué necesitas?</h3>
+      <div class="flex flex-wrap gap-2" id="needs">
+        <button class="filter-pill active" data-n="all">Todos</button>
+        <button class="filter-pill" data-n="capital">Capital de trabajo</button>
+        <button class="filter-pill" data-n="inversion">Inversión</button>
+        <button class="filter-pill" data-n="leasing">Leasing</button>
+        <button class="filter-pill" data-n="comex">Comercio exterior</button>
+      </div>
+    </section>
+
+    <!-- Banks -->
+    <section id="banks-container"></section>
 
     <p class="text-xs text-[#6B7D72] text-center mt-6 italic">* Tasas referenciales. Consulta con cada banco.</p>
   </main>
 
-  <script type="module" src="src/features/financiamiento/financiamiento.page.js"></script>
+  <script type="module" src="src/features/financiamiento/financiamiento.js"></script>
 </body>
 </html>
