@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>login — Ábaco</title>
+  <title>Usuario — Ábaco</title>
   <link rel="stylesheet" href="dist/output.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
@@ -13,19 +13,38 @@
       <img src="src/assets/abaco logo.svg" class="w-[34px] h-[34px]" alt="Ábaco logo" />
     </a>
     <div>
-        <button class="bg-[#2A322E] px-6 inline-block py-2 text-[#F5F0E8] font-semibold text-sm rounded-lg hover:bg-[#3D6B50]" type="submit"> Iniciar Sesion</button>
-        <button class="bg-[#cadcd3] text-abaco-dark px-6 inline-block py-2 border border-abaco-dark font-semibold text-sm rounded-lg hover:bg-[#7fb195]"" onclick="sopas()"> Crear cuenta</button>  
+        <a class="bg-[#2A322E] px-6 inline-block py-2 text-[#F5F0E8] font-semibold text-sm rounded-lg hover:bg-[#3D6B50]" href="/login.html"> Iniciar Sesion</a>
+          
     </div>
   </header>
 
 
-  <main class="max-w-4xl mx-auto p-8 flex items-center justify-center">
+  <main class="max-w-4xl mx-auto p-8 flex items-center justify-center flex-col">
+    <!-- aqui va un panel con la información del usuario según sus datos -->
+
+    <div class="bg-[#E0D5C3] min-h-[250px] md:min-h-[350px] lg:min-h-[400px] p-8">
+      <h1> ${currentUser.nombre} </h1>
+      <h2> ${currentUser.nombrePyme} </h2>
+      <div> 
+         <h3>${currentUser.tipoPyme}</h3>
+         <h3>${currentUser.ganancias}</h3>
+      </div>
+      <div>
+        
+        <button></button>
+      </div>
+      <div>
+
+        <button></button>
+      </div>
+    </div>
 
 
+    <div id="user-panel"></div>
 
   </main>
 
-  <script type="module" src="src/features/login/login.js"></script>
+  <script type="module" src="src/features/usuario.js/usuario.js"></script>
 </body>
 </html>
 

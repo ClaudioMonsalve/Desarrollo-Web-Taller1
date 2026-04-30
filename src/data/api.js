@@ -15,6 +15,7 @@ async function _loadData() {
   if (stored) {
     try {
       _cache = JSON.parse(stored);
+      console.log(_cache)
       return _cache;
     } catch (e) {
       localStorage.removeItem(STORAGE_KEY);
@@ -24,10 +25,11 @@ async function _loadData() {
   try {
     const response = await fetch(INITIAL_STATE_PATH);
     _cache = await response.json();
+    console.log(_cache)
     _persist();
     return _cache;
   } catch (e) {
-    _cache = { benefits: [], news: [], pymeTypes: [], courses: [], contacts: [], banks: [] };
+    _cache = {benefits: [], news: [], pymeTypes: [], usuarios: [], courses: [], contacts: [], banks: [] };
     return _cache;
   }
 }
@@ -41,6 +43,7 @@ export const api = {
   getBenefits: async () => { const d = await _loadData(); return d.benefits || []; },
   getNews: async () => { const d = await _loadData(); return d.news || []; },
   getPymeTypes: async () => { const d = await _loadData(); return d.pymeTypes || []; },
+  getTestUsers: async () => { const d = await _loadData(); return d.usuarios || []; },
   getCourses: async () => { const d = await _loadData(); return d.courses || []; },
   getContacts: async () => { const d = await _loadData(); return d.contacts || []; },
   getBanks: async () => { const d = await _loadData(); return d.banks || []; },
