@@ -27,7 +27,7 @@ let currentSlide = 0;
 let isDropdownOpen = false;
 
 // Initialization
-async function init() {
+async function init() { 
   pymeTypes = await api.getPymeTypes();
   allNews = await api.getNews();
   allBenefits = await api.getBenefits();
